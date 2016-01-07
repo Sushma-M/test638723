@@ -28,16 +28,19 @@ Application.$controller("MainPageController", ["$scope", function ($scope) {
 var _MainPage_Variables_ ={};
 </script>
 <script id="Main.html" type="text/ng-template">
-<wm-page name="mainpage" data-ng-controller="MainPageController" pagetitle="Main">
-    <wm-header name="header" height="auto" content="header"></wm-header>
+<wm-page data-ng-controller="MainPageController" name="mainpage" pagetitle="Main">
+    <wm-header content="header" name="header" height="auto"></wm-header>
     <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
     <wm-content name="content">
         <wm-left-panel name="leftpanel" content="leftnav" columnwidth="2"></wm-left-panel>
         <wm-page-content name="mainContent" columnwidth="8" paddingright="15" paddingleft="15">
             <wm-label name="label1"></wm-label>
             <wm-picture name="picture1"></wm-picture>
+              <wm-panel class="panel-primary" name="panel1">
+                <wm-panel-footer name="panel_footer1"></wm-panel-footer>
+            </wm-panel>
         </wm-page-content>
-        <wm-right-panel name="rightpanel" content="rightnav" columnwidth="2"></wm-right-panel>
+        <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>
     <wm-footer name="footer" content="footer"></wm-footer>
 </wm-page>
