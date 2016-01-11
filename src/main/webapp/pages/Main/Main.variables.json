@@ -1,5 +1,6 @@
 {
 	"notificationVariable1": {
+		"name": "notificationVariable1",
 		"owner": "Page",
 		"operation": "alert",
 		"onOk": "navigationVariable1",
@@ -9,9 +10,7 @@
 			"alerttype": ""
 		},
 		"category": "wm.NotificationVariable",
-		"_id": "wm-notificationVariable1-wm.NotificationVariable-1452166162832",
-		"name": "notificationVariable1",
-		"$$hashKey": "object:1821"
+		"_id": "wm-notificationVariable1-wm.NotificationVariable-1452166162832"
 	},
 	"notificationVariable2": {
 		"name": "notificationVariable2",
@@ -27,6 +26,7 @@
 		"_id": "wm-notificationVariable2-wm.NotificationVariable-1452166306210"
 	},
 	"navigationVariable1": {
+		"name": "navigationVariable1",
 		"owner": "Page",
 		"operation": "gotoPage",
 		"pageName": "rightnav",

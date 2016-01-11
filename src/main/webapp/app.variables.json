@@ -7,8 +7,7 @@
 		"dataBinding": {},
 		"pageTransitions": "none",
 		"category": "wm.NavigationVariable",
-		"_id": "wm-goToPage_Main-wm.NavigationVariable1389180517517",
-		"$$hashKey": "object:1059"
+		"_id": "wm-goToPage_Main-wm.NavigationVariable1389180517517"
 	},
 	"supportedLocale": {
 		"name": "supportedLocale",
@@ -21,6 +20,75 @@
 		"dataBinding": [],
 		"saveInPhonegap": false,
 		"category": "wm.Variable",
-		"_id": "wm-supportedLocale-wm.Variable1402640443182"
+		"_id": "wm-supportedLocale-wm.Variable1402640443182",
+		"$$hashKey": "object:1300"
+	},
+	"GoogleapisInvoke": {
+		"name": "GoogleapisInvoke",
+		"type": "googleapis.DirectionsResponse",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"target": "origin",
+				"value": "Toronto",
+				"type": "string"
+			},
+			{
+				"target": "destination",
+				"value": "Montreal",
+				"type": "string"
+			},
+			{
+				"target": "sensor",
+				"value": "false",
+				"type": "string"
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"service": "googleapis",
+		"operation": "invoke",
+		"operationType": "get",
+		"startUpdate": false,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"serviceType": "RestService",
+		"category": "wm.ServiceVariable",
+		"isDefault": true,
+		"wmServiceOperationInfo": {
+			"httpMethod": "get",
+			"name": "invoke",
+			"relativePath": "/googleapis/invoke",
+			"consumes": [
+				"text/xml"
+			],
+			"parameters": [
+				{
+					"name": "sensor",
+					"parameterType": "query",
+					"type": "string"
+				},
+				{
+					"name": "origin",
+					"parameterType": "query",
+					"type": "string"
+				},
+				{
+					"name": "destination",
+					"parameterType": "query",
+					"type": "string"
+				}
+			]
+		},
+		"_id": "wm-GoogleapisInvoke-wm.ServiceVariable-1452502456040",
+		"$$hashKey": "object:1299",
+		"controller": "RestServiceVirtual"
 	}
 }
