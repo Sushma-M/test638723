@@ -1,0 +1,40 @@
+{
+	"notificationVariable1": {
+		"owner": "Page",
+		"operation": "alert",
+		"onOk": "navigationVariable1",
+		"dataBinding": {
+			"text": "",
+			"okButtonText": "",
+			"alerttype": ""
+		},
+		"category": "wm.NotificationVariable",
+		"_id": "wm-notificationVariable1-wm.NotificationVariable-1452166162832",
+		"name": "notificationVariable1",
+		"$$hashKey": "object:1821"
+	},
+	"notificationVariable2": {
+		"name": "notificationVariable2",
+		"owner": "Page",
+		"operation": "alert",
+		"onOk": "navigationVariable1",
+		"dataBinding": {
+			"text": "g",
+			"okButtonText": "g",
+			"alerttype": "information"
+		},
+		"category": "wm.NotificationVariable",
+		"_id": "wm-notificationVariable2-wm.NotificationVariable-1452166306210"
+	},
+	"navigationVariable1": {
+		"owner": "Page",
+		"operation": "gotoPage",
+		"pageName": "rightnav",
+		"dataBinding": {
+			"pageName": ""
+		},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-navigationVariable1-wm.NavigationVariable-1452166306210"
+	}
+}
